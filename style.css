@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 48px;
+    background-color: bisque;
+}
+
+.container {
+    display: grid;/* esto habilita el comportamiento de grid en el contenedor */
+    grid-template-columns: 100px 200px 150px;/* esto define el ancho de las columnas */
+    grid-template-rows: 100px 200px 50px;/* esto define el alto de cada fila */
+
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(30, 154, 166);
+}
+
+.item {
+    background-color: aquamarine;
+}
