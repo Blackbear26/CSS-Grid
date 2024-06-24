@@ -13,10 +13,12 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:repeat(3, 1fr);
-    gap: 24px /* define el espacio entre filas y columnas */;
+    gap: 24px;
 
-    /* row-gap: 50px */ /* espacio entre filas */;
-    /* column-gap: */ /* espacio entre columnas */;
+grid-auto-flow: /* es el valor por defauld */;
+grid-auto-flow: column /* este valor cambia el flujo a columnas */;/* esto no es grid */
+
+direction: rtl;
 
     width: 500px;
     height: 500px;
@@ -42,4 +44,13 @@ body {
 
 .item5{
     background-color: rgb(16, 112, 30);
+}
+
+.container div{
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cadetblue;
 }
